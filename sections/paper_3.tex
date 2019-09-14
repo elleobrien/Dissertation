@@ -1,0 +1,403 @@
+\documentclass[../uwthesis.tex]{subfiles}
+\begin{document}
+
+\chapter{Bridging sensory and language theories of dyslexia: towards a multifactorial model}
+
+Competing theories of dyslexia posit that reading disability arises from impaired sensory, phonological, or statistical learning mechanisms. Importantly, many theories posit that dyslexia reflects a cascade of impairments emanating from a “core deficit”. Here we collect a battery of psychophysical and language measures in 106 school-aged children to investigate whether dyslexia is best conceptualized under a core-deficit model, or as a disorder with heterogenous origins. Specifically, by capitalizing on the drift diffusion model to separate sensory encoding from task-related influences on performance in a visual motion discrimination experiment, we show that deficits in motion perception, decision making and phonological processing manifest largely independently. Based on statistical models of how variance in reading skill is parceled across measures of sensory encoding, phonological processing and decision-making, our results challenge the notion that a unifying deficit characterizes dyslexia. Instead, these findings indicate a model where reading skill is explained by several distinct, additive predictors, or risk factors, of reading (dis)ability. 
+
+\section{Introduction}
+Recently, there has been growing adoption of the view that dyslexia, a reading disability, is probabilistic in nature: children with a family history of dyslexia are considered "at-risk", and compensatory skills such as strong oral language or executive functions may be "protective factors". In this multifactorial framework, most cases of dyslexia cannot be explained by a single cognitive deficit. Despite this heterogeneity, it is broadly accepted that phonological awareness (PA) and rapid automatized naming (RAN) are two of the strongest---if imperfect---predictors of reading development. 
+
+\section{Methods}
+
+\subsection{Participants}
+A total of 119 native English-speaking school-aged children ages 8-12 were recruited for the study. Children without histories of neurological or sensory disorders were recruited from a database of volunteers in the Seattle area (University of Washington Reading \& Dyslexia Research Database). Parents and/or legal guardians of all participants provided written informed consent under a protocol that was approved by the University of Washington Institutional Review Board. All subjects demonstrated normal or corrected-to-normal vision. Participants were tested on a battery of cognitive and literacy assessments, including the Woodcock-Johnson IV (WJ-IV) Letter Word Identification and Word Attack subtests, the Test of Word Reading Efficiency (TOWRE-2), Comprehensive Test of Phonological Processing (CTOPP-2) and the Weschler Abbreviated Scale of Intelligence (WASI-II). All subjects had normal or corrected-to-normal vision.
+
+Five subjects did not complete the psychophysics. An additional two subjects did not show evidence of performing above chance (greater than 60.5\% accuracy at any of the four stimulus coherence levels) and were excluded from analysis. A further six subjects did not produce enough usable data to fit the DDM (no more than 15\% responses outside of the acceptable response time window from 200 ms to 10 s). This left 106 subjects with usable data.
+
+\subsection{Demographics}
+We recruited participants whose reading abilities ranged from profoundly impaired to highly proficient. Since reading abilities fall on a continuum, we treat reading ability as a
+continuous measure in our main statistical analyses. For the purpose of comparison with other studies we include group-level analyses (Dyslexic versus Control) in our Supplementary Materials. Group labels were assigned on the basis of the composite Woodcock-Johnson Basic Reading Score
+(WJ-BRS) and TOWRE Index. As both the WJ-BRS and TOWRE Index are scored on the same standardized scale, a composite reading skill measure was created by averaging the two scores for
+each participant. The “Dyslexic” group comprised participants whose reading score fell 1 standard deviation or more below the population mean (reading score $<85$); the “Control” group had
+reading skill measures above this cutoff and had never been diagnosed with a reading disability. There were 43 subjects in the Dyslexic group and 48 in the Control group. A remaining 15 subjects were not well-described by either label (e.g., reading score$>85$ but an indication of a dyslexia
+diagnosis) so were not included in the group comparisons. As in previous work by our group and others 30,66 , we did not IQ-match these groups, but rather controlled for nonverbal-IQ explicitly in our statistical analyses. Additionally, ADHD diagnosis was not grounds for study exclusion because of the high comorbidity between ADHD and dyslexia. The presence of ADHD was
+entered into our linear modeling analyses as a covariate. Relationships between demographic characteristics, phonological, IQ measures and reading skill are presented in ##### TABLE LOCATION#######
+
+\subsection{Healthy Brain Network dataset}
+The Healthy Brain Network dataset is provided to the public by the Child Mind Institute. At the time of writing, the released dataset included 1814 subjects. From this dataset, we identified
+124 school-aged individuals (ages 5-17) in the urban New York City region who had been diagnosed with “Specific Learning Disorder with Impairment in Reading” by a panel of clinicians affiliated with the Child Mind Institute and had also been administered the CTOPP-2. We also identified 119 individuals who were similarly assessed and given no diagnosis of any kind. Due to the large number of participants available, we were able to create nonverbal-IQ matched control groups on the basis of the Wechsler Intelligence Scale for Children’s Matrix Reasoning scaled score (Dyslexia: $n = 110$; Control: $n = 105$). These groups did not significantly differ in terms of
+nonverbal-IQ ($t(208.85) = -1.0668, p = 0.287$) or age ($t(212.65 = 1.041, p = 0.299$).
+
+\subsection{Psychophysics stimuli and apparatus}
+Stimuli for the motion discrimination experiment were created using MATLAB (The Mathworks Corporation, Natick, MA, USA) in conjunction with the Psychophysics Toolbox \cite{Brainard1997TheToolbox}. Stimuli were displayed on a LG liquid crystal display (1,920 $\times$ 1,080 resolution, 120 Hz refresh rate, subtending 51$^\circ$ horizontally). The subjects’ response was collected using keypresses. The
+viewing distance was 56 cm. We used random-dot motion stimuli (150 dots) that were displayed
+in a circular aperture (14$^\circ$ in diameter) centered around the fixation mark (1$^\circ$) at the center of
+display. Light (271 cd/m\textsuperscript{2} ) and dark (0 cd/m\textsuperscript{2}) dots (dot size = 0.15$^\circ$) moved at the speed of 8$^\circ$/s on a gray background (135 cd/m\textsuperscript{2}). Each dot was assigned a random lifetime from a uniform distribution between 0 and 200 ms (24 video frames). When a dots lifetime expired, it was randomly re-positioned within the aperture and assigned the maximum lifetime (200 ms). Motion coherence was defined as the percentage of dots moving together in the same direction compared
+to dots moving in random directions. The stimuli were equivalent to those used in Joo et al. \cite{Joo2017TheReconsidered}
+except (a) with fixed coherence levels, and (b) stimuli remained on the screen until the subject indicated a decision with a button press (as opposed to fixed duration).
+
+\subsection{Psychophysics procedure}
+Each session comprised 6 experimental blocks. For each subject, three blocks of fifty
+stimuli were tested with a brief break in between. This was followed by a longer break to collect
+reading, phonological and IQ measures, and followed by the final set of three blocks. At the
+beginning of the session, subjects completed 10 practice trials comprising high coherence motion (60–100\%). Subjects were allowed to repeat the practice up to three times, until they got at least 70\% correct. All participants were able to do this.
+
+Stimuli were presented at five coherence levels: 6\%, 12\%, 24\%, 48\%, and 100\%. However, early in the study we realized that many subjects (unrelated to reading ability) found 100\%
+coherence difficult and reported varying visual percepts. Performance typically declined for 100\% coherence stimuli compared to 48\% coherence. Therefore, we analyzed only the range of stimulus coherence levels where performance was generally monotonic, from 6\% to 48\%. Each stimulus
+coherence level was presented 60 times for a total of 300 presentations, 240 of which were included
+in the analysis.
+
+Each trial started with a fixation mark at the center of the display. After 500 ms, random-dot motion stimuli were displayed until the subject made a keypress (or until 10 seconds had elapsed). Subjects pressed right or left arrow keys on a standard keyboard to report motion direction. The fixation mark was turned off when the response was made, and visual and auditory
+feedback was given to indicate correct and incorrect responses. The experiment did not proceed until subjects reported the motion direction. The inter-trial interval was 1 s, and after this interval the fixation mark re-appeared at the center of the display to indicate the beginning of the next trial.
+
+\subsection{Drift diffusion model}
+Fundamentally, the DDM tries to maximize the likelihood of observing a distribution of reaction times according to the probability density function
+
+\begin{equation}
+f(x\mid v,a,z) = \frac{\pi}{a^2} \exp(-vaz-\frac{v^2x}{2}) \times
+\sum_{k=1}^{\infty} k \exp(-\frac{k^2\pi^2x}{2a^2}) \sin(k\pi z)
+\end{equation}
+
+where $x$ is reaction time, $v$ is drift rate (the average rate at which evidence is accumulated for a decision), $a$ is the distance between the two decision boundaries, and $z$ is a bias term that allows for an observer to prefer one alternative to the other \cite{Wald1947SequentialAnalysis}. The parameter $v$ is allowed to vary with stimulus level. Additionally, the DDM fits a parameter $t$, which corresponds to the non-decision time---in other words, the time taken by all sensory and motor processes besides accumulating evidence for a decision, such as planning and executing a motor response and converting incoming sensory inputs to units of evidence.
+
+The above equation predicts perfectly symmetric distributions of correct and error response times, and so the DDM model has been extended to include three free parameters that allow it to approximate more realistic distributions. The first of these parameters is $sz$, the trial-to-trial variaiblity in the drift process starting point (centered around the halfway-point between the two decision bounds), which allows the model to predict fast errors. The other parameters are $sv$, the trial-to-trial variability in average drift rate, and $st$, the trial-to-trial variability in residual time $t$. When the DDM is fit with these three additional parameters, it is referred to as the \textit{full} DDM.
+
+Although employing additional parameters can make a model less parsimonious, we elected to use the full DDM for several reasons. First, we were directly interested in whether the
+parameter $sz$ might be increased in individuals with dyslexia. As there has been a great deal of recent inquiry into whether people with dyslexia employ less-than-optimal decision-making
+criteria on psychophysical tasks, the parameter $sz$ represents one candidate mechanism: the propensity to execute decisions without holding a constant criterion for the relative amount of
+evidence across trials. Second, we assessed the Akaike Information Criterion for all subjects in the study with the full and reduced model and found that, on average, AIC was lower for the full model: the average reduction in AIC going from the reduced to full model was -2.87 with a standard error of 1.05.
+
+We assessed the split-half reliability for all parameter estimates in the full model by fitting the DDM to two randomly-divided portions of each subject’s response data (Table S10). These results were encouraging in that, although the estimates for the trial-to-trial variability parameters
+were less reliable than the standard parameters, most were not prohibitively unreliable. Lastly, our interest lay in correlating the DDM parameter estimates with reading skill, so if parameter
+estimates were unreliable due to an overabundance of flexibility, we would reduce the likelihood of finding significant correlations between model parameters and behavioral measures. Therefore,the decision to use the full model is actually more conservative from the perspective of identifying
+parameters that are associated with reading skill.
+
+The DDM was fit using the Hierarchical Drift Diffusion Model toolkit for Python \cite{Wiecki2013HDDM:Python}.
+Although this package includes utilities for Hierarchical Bayesian modeling of the DDM, which provide more stable fits on fewer trials by weighting parameter estimations according to group-level distributions, we opted to fit a standard DDM to each individual. As we are interested in individual differences in behavior, and due to the statistical power available from our relatively large number of participants, we prioritized somewhat less-reliable but less-biased estimations of
+each individual’s DDM parameters.
+
+The DDM was fit to each individual’s behavioral responses and reaction times using the
+Maximum Likelihood fitting method (as recommended by \cite{VanZandt2011HowDistribution}. The optimization scheme
+was attempted five times per individual and parameter estimates from the best run were saved. In all cases, the optimization scheme terminated successfully. As recommended by the makers of the HDDM package \cite{Wiecki2013HDDM:Python}, the DDM was fit with a mixture model that allowed up to 5\% of responses to
+be assigned to a uniform “lapse” distribution. This has the effect of reducing bias in drift rate estimates due to occasional lapses. Because this mixture component was included, we employed only a coarse screen for outlier detection before DDM fitting: responses occurring before 200 ms (before a typical behavioral response can be executed) and after 10s (after the stimulus had concluded) were excluded. In most subjects, this led to minimal data exclusion: although we excluded two participants with $>15$\% data loss, the average participant in the remaining sample had 98.1\% usable data.
+
+\subsection{Outlier detection}
+To determine the presence of highly unusual model fits, we computed the Mahalanobis distance for each individual with respect to the 9 parameters estimated by the DDM. The Mahalanobis distance for multiple dimensions follows a chi-squared distribution, and so we use this measure to detect outliers \cite{Filzmoser2004AMethod}. Specifically, individuals with a Mahalanobis distance corresponding to values beyond the $p < 0.001$ threshold were deemed to be outliers. Two such individuals were detected; both had been fit with extremely high a values ($a = 8.17$ and $a = 5.60$). One of these individuals had a composite reading score in the Dyslexic range, whereas the other would have been above our cutoff. These two points were excluded from further analysis as we have cause to doubt the quality of their DDM parameter estimates, but their results are included with the full dataset online.
+
+\subsection{Stepwise model selection procedure}
+In our analyses of the relationships between various parameter estimates from the DDM reading skill, we employed a stepwise model selection procedure. In all cases, we considered three covariates: age, nonverbal-IQ, and the presence of an ADHD diagnosis. Each model selection procedure began with a fully specified model of reading score as a function of the parameter(s) of interest plus the three covariates. Fitting was performed with the base R \texttt{lm()} function, except
+where mixed model usage is noted, in which case the \texttt{lme4} library was used \cite{Bates2016Packagelme4}. The contributions of the covariates were first tested using an anova test. Model terms were retained if the $p$-value
+associated with the more complex model was less than 0.1. Next, parameters of interest were tested similarly. Throughout the manuscript, wherever model selection is performed we report the selected (“most parsimonious”) model.
+
+\subsection{Mediation analysis}
+Mediation analysis was performed using the \texttt{mediation} package for R \cite{Tingley2015Packagemediation} . In all mediation models, nonverbal IQ was entered as a covariate. 4000 bootstrap simulations were used to estimate
+the proportion of mediation of a variable of interest by phonological awareness (the CTOPP-2 Phonological Awareness composite score) in a linear model of reading skill. Bias-corrected and accelerated confidence intervals were estimated from the bootstrapped simulations.
+
+\section{Results}
+
+\subsection{Predicting dyslexia from phonological measures}
+
+We first assessed the phonological core deficit model by quantifying the extent to which deficits in phonological awareness (PA), rapid automatized naming (RAN) or both differentiate individuals with dyslexia from control subjects with typical reading skills (Figure~\ref{fig:p3_fig1}). A recently released public dataset, the Child Mind Institute’s Healthy Brain Network (HBN) \cite{Alexander2017DataDisorders}, allows us to explore this question in a large sample of children ($N = 1814$, $n = 110$ children with dyslexia, $n = 105$ matched children with no neurological or psychiatric diagnosis). Using quadratic discriminant analysis (QDA) with age and nonverbal-IQ matched groups, we asked what proportion of children could be correctly classified on the basis of two predictors: the Comprehensive Test of Phonological Processing (CTOPP-2)’s Elision measure of PA and Rapid Symbol Naming Composite measure of RAN (both age-normed). A QDA classifier\footnote{Note that a support vector machine achieved equal accuracy.} trained with leave-one-out cross validation could correctly classify 67.4\% of individuals with a specificity of 68.2\% and a sensitivity of 66.7\%.
+
+This result is undoubtedly in alignment with the extensive literature on phonological
+processing: PA and RAN are both meaningful predictors of reading skill. Yet, these two
+measures alone fail to account for many cases of dyslexia. Furthermore, many individuals with apparently typical reading abilities would be predicted to be dyslexic on the basis of their PA and RAN scores alone.
+
+\begin{figure}
+    \centering
+    \caption{Phonological processing measures from a large public dataset.}
+    \label{fig:p3_fig1}
+    \includegraphics[width=18cm]{images/paper_3/1_HBN_Groups.png}
+    \item \textit{Panels A-B: Density plots for phonological awareness (PA, CTOPP Elision) and rapidautomatized naming (RAN, CTOPP Rapid Symbolic Naming Composite) in the Healthy Brain Network (HBN) dataset in two groups. The Dyslexia group (blue) consists of 110 school-aged children diagnosed with dyslexia by a panel of clinicians. The red density plot represents an age- and nonverbal-IQ-matched control group of 105 children identified as having no psychiatric or neurological diagnoses by the same panel. Panel C: The decision boundary of a quadratic discriminant analysis trained on the entire dataset is shown. Dots represent observations from the dataset with slight jitter added for visibility of overlapping points.}
+
+\end{figure}
+
+\subsection{Differences in visual motion processing}
+Having demonstrated that phonological predictors alone are an insufficient to explain all cases of dyslexia, we next consider the contribution of visual motion processing to reading abilities: do visual motion processing difficulties typically coincide with phonological impairments, as would be expected in a cascading model of reading disability? Or are they a separable contributor to reading outcomes which explain cases of dyslexia that were not captured by the phonological core deficit model? Here we present the results of the motion discrimination experiment (conducted in the lab) in 106 school-aged children, including 42 individuals who meet our criteria for dyslexia. Accuracy and response times were collected for stimuli presented at four coherence levels: 6\%, 12\%, 24\%, and 48\%.
+
+Before we model the respective contributions of sensory and decision processes to task
+performance, it is important to establish that task performance is related to reading skill. We confirmed that reading skill was related to reaction time: using model selection, we identified that the most parsimonious model of median reaction time included main effects of stimulus coherence ($\beta = -0.173$, SE = 0.009, $p < 0.001$ ), age ($\beta = -0.059$, SE = 0.0214, $p<0.001$ ), and reading skill ($\beta= -0.006$, SE = 0.002, $p<0.001$) with a random effect of subject. Accuracy was not significantly related to reading skill (Table S2), likely reflecting the fact that the motion stimuli remained on the screen until the subject provided a response. Notably, we also observed that the ratio of correct to error median response times within each subject was significantly associated with reading skill ($\beta = -0.004$, SE = 0.002,$p = 0.0497$), with poor readers showing an increased tendency to make “fast errors” relative to correct response times (Figure~\ref{fig:p3_fig2}). The presence of fast errors is notable because this phenomenon is typically associated with non-sensory mechanisms, including a tendency to initiate guesses before an optimal amount of evidence is considered \cite{Smith2004PsychologyDecisions}. Thus, raw reaction time data indicated that children with dyslexia were not only less efficient than control subjects, but also showed a qualitatively different pattern of responses.
+
+\begin{figure}
+    \centering
+    \caption{Performance on the visual motion task.}
+    \label{fig:p3_fig2}
+    \includegraphics{images/paper_3/2_drift_rates.png}
+    \item \textit{Panel (A): A schematic of the drift diffusion model (DDM) with reaction time distributions (at 12\% coherence) from the control and dyslexic groups imposed above. The red and blue lines in the schematic show how differences in drift rater predict differences in the reaction time distributions. The DDM model was fit separately to each individual’s data and the average drift rate parameter for the dyslexic and control groups is shown in the bar plot in panel A (+/- 1 standard error). (B) The relationship between estimated drift rate and reading skill at four different stimulus coherence levels. Lines are best fit regression lines and shaded regions are confidence intervals.}
+
+\end{figure}
+
+\subsection{Less efficient visual motion processing in dyslexia}
+To decouple sensory encoding of visual motion from the process of forming and executing a binary decision, we fit the drift diffusion model (DDM) to each subject’s distribution of behavioral responses and reaction times. In the DDM for a two-alternative forced-choice judgment, it is assumed that an observer samples sensory input at discrete moments in time, and that these samples are accumulated in a noisy decision variable that represents the integrated evidence over the course of the trial (plus internal noise). When this decision variable reaches a threshold, the observer initiates a decision (Figure~\ref{fig:p3_fig2}). The DDM therefore separates the encoding and evaluation of sensory information (which drives changes in the decision variable) from non-sensory processes, such as the magnitude of the threshold for triggering a decision and the trial-to-trial variability in the decision process (for a detailed review of the DDM, see \cite{Ratcliff2004ATask,Ratcliff2008TheTasks}).
+
+After fitting the DDM to each subject’s behavioral responses, we investigated whether
+there was a relationship between the drift rate parameter, v, and reading skill. Drift rate models the efficiency with which information is extracted and integrated from incoming sensory signals. For example, drift rate monotonically increases with stimulus coherence level ($beta = 0.719$, SE = 0.0249,$p<0.001$) indicating the visual system can more efficiently extract motion information when stimulus noise is low. If individuals with dyslexia do not have any difficulties with sensory encoding, as predicted by the statistical learning hypothesis, we would expect drift rate to be uncorrelated with reading skill once covariates like IQ, age, and ADHD diagnosis are controlled for. Note that in our analyses, we treat reading as a continuous measure, but we also provide
+analyses where reading disability is treated as a categorical variable in #################SUPPLEMENT.##### 
+
+Individual estimates of drift rate are shown in Figure~\ref{fig:p3_fig2}). Drift rate was best modeled by a main effect of reading skill, a main effect of stimulus coherence, a main effect of age, and the interaction of reading skill and stimulus coherence (Table~\ref{tab:p3_drift_rate_model}). Our results therefore indicate that drift rate increases with stimulus coherence, as expected, as well as age and reading skill. Furthermore, there is a stronger relationship between reading skill and drift rate at high stimulus coherence levels, which is likely a consequence of the fact that estimates of drift rate are more reliable at higher coherence levels.
+
+The DDM also estimates a parameter modeling the trial-to-trial variability in drift rate, $sv$. This parameter is known to be correlated with drift rate under certain conditions, with higher average drift rates being associated with greater trial-to-trial variability \cite{Wagenmakers2005OnDistribution,Wagenmakers2007OnDistribution}. Unsurprisingly, we found that $sv$ was correlated with drift rates at every stimulus level. It was positively related to reading skill, but this effect did not reach significance ($r = 0.13$, $p = 0.095$).
+
+\begin{table}
+\caption{Selected model of drift rate}
+\label{tab:p3_drift_rate_model}
+\centering
+    \begin{tabular}{lrrl}
+    \toprule
+      & $\beta$ & SE & $p$\\
+    \midrule
+    (Intercept) & 1.534 & 0.062 & $<$0.001\\
+    Stimulus coherence & 0.719 & 0.025 & $<$ 0.001\\
+    Age & 0.268 & 0.062 & $<$ 0.001\\
+    Reading skill & 0.173 & 0.062 & 0.007\\
+    Stimulus coherence:Reading skill & 0.087 & 0.025 & $<$ 0.001\\
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+
+As to the question of whether drift rate explains additional variance in reading skill beyond phonological processing, consider the subset of readers in our sample with above average phonological awareness (PA scores $\geq 100$). Within this subgroup of 38 participants, 9 children (23.7\%) met our criteria for dyslexia despite having high phonological awareness and reading skill was significantly correlated with mean drift rate ($r = 0.49, p = 0.002$). For these individuals, knowing drift rate explains 24\% of variance in reading skill (Figure~\ref{fig:p3_fig3}. In readers with average-or-better phonological awareness, it appears that individual differences in motion encoding and sensory integration distinguish between struggling and expert readers.
+
+
+
+\begin{figure}
+    \centering
+    \caption{Drift rate versus reading skill in a subset of individuals with good
+phonological awareness.}
+    \label{fig:p3_fig3}
+    \includegraphics{images/paper_3/3_Explanatory_value_inset.png}
+    \item \textit{Average drift rate is calculated by averaging each individual’s z-scored drift rate estimates at each stimulus coherence level. Inset: a scatter plot indicating in black which subset of the study sample is included in the “good phonological awareness” group.}
+
+\end{figure}
+
+\subsection{Decision making parameters are related to reading skill and independent of sensory processing}
+
+We next consider the predictions of the non-sensory hypothesis by analyzing the
+relationship between non-sensory parameters of the DDM and reading skill (Figure~\ref{fig:p3_fig4}A-D). If poor readers struggled with the task only because of differences in sensory encoding, we would expect no parameters besides drift rate (and $sv$) to be correlated with reading skill.
+
+To the contrary, the parameter $sz$ was correlated with reading skill and, after model
+selection, the best model of $sz$ contained only a main effect of reading skill ($\beta = -0.084$, SE =0.028, $p = 0.003$). The parameter $sz$ represents the trial-to-trial variability in the relative
+amount of evidence required to initiate a judgment; individuals with high $sz$ values are prone to
+making fast errors. Indeed, we confirmed that the ratio of median correct response times to error
+response times within a subject was correlated with the DDM estimation of $sz$ ($r = 0.452, p<0.001$).
+
+Similarly, we observed that the parameter representing the threshold of evidence required
+to initiate a decision, a, had a modest but significant correlation with reading skill ($\beta = -0.136$, SE
+= 0.063, $p = 0.033$), indicating that worse reading skill is associated with employing a more
+conservative criterion for initiating a perceptual decision. No covariates (age, nonverbal IQ or
+ADHD diagnoses) were retained by model selection.
+
+Lastly, we examined parameters that represent the lumped contributions of all non-decision
+processes to reaction time, including the time necessary to encode a sensory stimulus and execute
+a motor response. Because some individuals with dyslexia are known to have slower processing
+speed, we might expect this time to be longer in children with worse reading skills. Indeed, the
+parameter t representing an individual’s average non-decision time showed an overall negative
+relationship with reading skill. However, the magnitude of the effect was not nearly large enough
+to attain statistical significance, and after model selection, only age was retained as a predictor of
+$t$ ($\beta = -0.050$, SE = 0.0163, $p = 0.003$). As such, maturation is associated with reduced non-
+decision time. Interestingly, a parameter modeling trial-to-trial variability in non-decision time, st,
+was best modeled by main effects of reading skill ($\beta = -0.081$, SE = 0.028, $p = 0.004$) and
+age ($\beta = -0.085$, SE = 0.028, $p = 0.003$).
+
+We have so far identified several parameters of the DDM, both sensory and non-sensory,
+that show associations with reading skill. We next considered the extent to which these parameters
+were correlated with one another (Figure~\ref{fig:p3_fig4}E). As expected, we noted strong correlations between
+the four drift rate parameters. None of the drift rate parameters were significantly correlated with
+any non-sensory parameters after correction for multiple comparisons. There were moderate
+correlations between three non-sensory parameters, $st$, $t$ and $sz$ ($st$ and $t$: $r = 0.685, p <0.001$; $t$ and $sz$: $r = 0.335, p = 0.0005$; $sz$ and $st$: $r = 0.386, p < 0.001$) These three parameters
+largely contribute to modeling the leading edge of the reaction time distribution: $sz$ allows for the
+presence of relatively fast errors, $t$ shifts the response time distribution along the time axis, and st
+allows for responses before an individual’s average response time. Finally, we noted that the
+parameter a was uncorrelated with any of the other parameters.
+
+Hierarchical clustering with Ward’s method\cite{Ward1963HierarchicalFunction} indicated that the correlation matrix was consistent with three clusters of parameters: a cluster consisting only of $a$, another consisting of
+the $st$, $t$, and $sz$, and a final cluster including all four drift rates and $sv$. This suggests that the
+DDM captures several independent mechanisms underlying sensory encoding and perceptual decision making.
+
+\begin{figure}
+    \centering
+    \caption{Summary of fitted drift diffusion model parameters.}
+    \label{fig:p3_fig4}
+    \includegraphics[width=18cm]{images/paper_3/4_decision_parameters_modified.png}
+    \item \textit{Panels A-D: The relationship between reading score and four non-sensory parameters
+of the DDM. (A) decision threshold a, (B) variability in drift process starting point $sz$, (C) non-
+decision time $t$, and (D) variability in non-decision time $st$. Panel E: correlations between
+parameters of the DDM. Boxes indicate hierarchical clustering results (Ward’s method) and stars
+indicate significant correlations after Holmes-Sidak correction for multiple comparisons: $p < 0.05$ is noted with *, $p < 0.01$ with **, and $p < 0.001$ with ***. Panel F: group comparisons for the
+three composite measures based on hierarchical clustering of the DDM parameters: $d_{comp}$;
+composite of $sz$, $st$, and $t$, the $a$ parameter, and $v_{comp}$ : composite of the four drift rate parameters
+and $sv$. Note that all three composite parameters are $z$-scored. Error bars represent one standard
+error of the mean.}
+
+\end{figure}
+
+\subsection{Sensory and non-sensory predictors both explain reading outcomes}
+So far in our analysis, there seem to be several separate profiles of performance on the
+motion discrimination task that are associated with low reading skill: reduced ability to encode
+and integrate sensory information, setting a more conservative decision criterion, and generally
+more variability in terms of the time taken to gather evidence and/or execute a decision. The lack
+of correlations between many of the DDM parameter estimates indicates that individuals who
+display a deficit in terms of one process (e.g., sensory encoding), are not necessarily the same
+individuals who perform abnormally in terms of another process (e.g., decision-making) and that
+profiles of performance are variable across subjects. Therefore, we might expect that each
+parameter contributes separately to explaining variance in reading outcomes.
+
+To test whether each dimension of task performance is indeed a unique contributor to a
+model of reading skill, we employed a linear model. To simplify the number of parameters, we
+introduce several composite measures based on the correlation matrix of DDM parameters and our
+clustering analysis (Figure~\ref{fig:p3_fig4}F). Drift rate is summarized as a composite measure, $v_{comp}$, by taking the first principal component of the four drift rates and $sv$. A second composite measure $d_{comp}$ was
+derived from the first principal component $st$, $t$, and $sz$, which we expect represents aspects of
+variability in the decision-making process.
+
+The dyslexic and control groups differed in terms of each of these three mechanisms
+(Figure~\ref{fig:p3_fig4}F). We performed model selection, starting with the full model with reading score as the
+dependent measure and all hypothesized DDM parameters and the three covariates ($v_{comp}$, $d_{comp}$ , $a$,
+nonverbal IQ, ADHD diagnosis and age) as predictors. The selected model retained all three
+predictors from the DDM and nonverbal IQ (Table~\ref{tab:p3_drift_rate_model}).
+
+This result confirms that non-sensory mechanisms explain additional variance in reading
+skill once the quality of sensory evidence encoding is accounted for. As such, even within this
+single psychophysical task, there are multiple non-correlated dimensions of variance contributing
+to the pattern of responses observed in individual’s with dyslexia: the ability to extract evidence
+from sensory information, choice of decision threshold, and trial-to-trial variability in behavior.
+
+
+\begin{table}
+\caption{Selected model of reading skill from DDM parameters}
+\label{tab:p3_drift_rate_model}
+\centering
+    \begin{tabular}{lrrl}
+    \toprule
+      & $\beta$ & SE & $p$\\
+    \midrule
+    (Intercept) & 0.972 & 0.351 & $<$0.001\\
+    $v_{comp}$ & 0.-0.274 & 0.078 & $<$ 0.001\\
+    $a$ & -0.339 & 0.119 &  0.005\\
+    $d_{comp}$ & 0.291 & 0.076 & $<$ 0.001\\
+    Nonverbal IQ & 0.045 & 0.077 & $<$ 0.001\\
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsection{Psychophysical measures are not proxies for phonological awareness}
+
+To address the question of whether performance on the motion discrimination task is
+related to reading skill by way of phonological processing, or in addition to it, we explore a series
+of models. We first test the hypothesis that predictors from the psychophysical task do not explain
+additional variance in reading skill once phonological processing is accounted for. We again
+modeled reading skill as a function of our parameters of interest from the DDM—$v_{comp}$, $d_{comp}$, and
+$a$—as well as two phonological processing measures, PA and RAN, and the three covariates.
+Model selection retained all predictors except ADHD diagnosis and age. Correspondingly, an
+ANOVA F-test comparing the selected model to a reduced model with only PA, RAN and
+nonverbal IQ confirmed that adding predictors from the DDM explained variance in reading skill
+above and beyond the reduced model ($F(100, 97) = 4.044, p = 0.009$). The reduced model also
+had a higher AIC (selected model AIC = 794.4, reduced model AIC = 800.7) and BIC (selected
+model BIC = 813.9, reduced model BIC = 815.6). From this analysis, we can confirm that all three
+predictors from the DDM are useful for explaining differences in reading skill in addition to
+traditional measures of phonological awareness.
+
+Because ordinary least squares models may not be suitable for obtaining reliable parameter
+estimates in the presence of multicollinearity, we also applied lasso regression with 10-fold crossvalidation \cite{Friedman2010RegularizationDescent.} to search for the sparsest model that accurately predicts reading score. Lasso regression seeks to reduce the number of parameters in a model by penalizing the sum of the
+absolute values of all regression coefficients, while also minimizing squared residuals of the
+model.
+
+Lasso regression starting with the full model indicated that the only parameter that should
+be dropped is age (Figures ####S3-S4#### show the effect of regularization on model accuracy and number
+of parameters). While lasso regression is not a tool for hypothesis testing, it confirms that the
+selected predictors—$v_{comp}$, $d_{comp}$, $a$, nonverbal IQ, PA, RAN, and ADHD diagnosis—are all
+sufficiently useful for explaining variance in held-out observations to justify their “cost”. In other
+words, removing any of these parameters would reduce the model’s accuracy in predicting held-
+out observations.
+
+\subsection{Do sensory deficits have cascading effects?}
+It has been argued that deficits in sensory processing or decision-making could affect
+reading skill because they disrupt the typical development of phonological awareness 
+\cite{Lieder2019PerceptualDyslexia,Manis1997AreDyslexia,Richardson2004AuditoryChildren}. We
+therefore explored whether this hypothesis is borne out in our data by employing a mediation
+analysis. While a was not significantly correlated with PA, $v_{comp}$ and $d_{comp}$ showed modest
+correlations ($v_{comp}$ and PA: $r = 0.324, p < 0.001$; $d_{comp}$ and PA: $r = 0.182, p = 0.036$).
+
+We first tested a model with PA mediating the relationship between $v_{comp}$ and reading skill
+and found a significant, partial mediation effect (42.3\%, $p = 0.005$). Similarly, the $d_{comp}$ -reading
+skill relationship is partially mediated by PA (22.2\% mediation, $p = 0.022$)), but there was also
+still a significant direct relationship ($\beta = 4.293$, SE = 1.501, $p = 0.005$). As such, our results
+provide some support for the idea that in certain poor readers, low PA could be a consequence of
+a more fundamental impairment in either sensory or non-sensory mechanisms. However, our data
+suggest a partial mediation, indicating that many individuals would not be well described by this
+cascading model and that there are also direct links between the model parameters and reading
+skill.
+
+\subsection{Multiple dimensions of skilled and disabled reading}
+
+Contrary to theories that seek to discover a unified deficit that characterizes children with
+dyslexia, we have established that sensory processing of visual motion is separable from non-
+sensory aspects of perceptual decision making, and both factors account for independent variance
+in reading skill. To speak to the question of how many separable underlying factors predict reading
+skill, we next apply exploratory factor analysis (EFA). EFA is an unsupervised learning approach
+for identifying the number, and characteristics, of latent factors that explain the correlation
+structure of a multi-dimensional data set \cite{Ferguson1993ExploratoryUsersGuide,Costello2005BestAnalysis,Kline2013ExploratoryAnalysis}. We applied EFA to characterize the space of the DDM parameters, nonverbal-IQ, and the six subtests of the CTOPP (measure of reading skill were not included in the EFA). An analysis of the eigenvalues of the correlation matrix indicated that
+four latent factors were warranted (i.e., the first four eigenvalues > 1, see scree plot in Figure S5).
+This was confirmed by parallel analysis \cite{Hayton2004FactorAnalysis} (i.e., in a simulation of 1000 random correlation matrices, the first four resulting eigenvalues were lower than the corresponding eigenvalues from
+our data’s correlation matrix 95\% of the time). The four factors are shown in Figure~\ref{fig:p3_fig_5} with
+orthogonal varimax rotation. The total proportion of explained common variance by the four-factor
+model was 55.8\% (Factor 1: 20.3\%, Factor 2: 14.2\%, Factor 3: 10.7\%, Factor 4: 10.6\%).
+
+The loadings of the first factor are dominated by the four drift rate parameters, whereas the
+second factor is loaded most heavily by nonverbal-IQ and four of the CTOPP subtests. The
+remaining two subtests, Rapid Digits and Rapid Letters, load onto their own factor (in line with
+the double-deficit hypothesis \cite{Wolf2000Naming-speedHypothesis}). An additional factor appears to reflect non-decision time and variability parameters of the DDM $st$, $sz$, and $t$. Notably, the evidence threshold parameter, $a$, is not particularly associated with any factor; 87\% of variance in a is unexplained by this model.
+
+This factor analysis largely conforms to the intuitions we have built so far through linear
+models: drift rate, although correlated with phonological processing and perhaps partially
+mediated by it, is identified as a separate factor. Drift rate and the non-sensory parameters of the
+DDM are modeled as observations from two distinct factors. It is likely that $a$ is representative of
+an additional factor, consistent with its lack of correlations with any other parameter of the DDM
+(note that without multiple estimates of $a$, EFA cannot estimate measurement noise and
+consequently does not assign it to a new factor). Critically, each of these four factors was
+significantly related to reading skill demonstrating that, rather than representing a single
+underlying construct, there are multiple, independent cognitive and sensory dimensions
+characterizing individual differences in reading skill (Figure~\ref{fig:p3_fig_5}). A linear model of reading skill as
+a function of scores on the four factors indicated that all effects were significant (see coefficients
+in Figure 5). Furthermore, the full model also had a lower AIC (full model AIC = 798.8, single
+factor model AIC = 869.9) and BIC (full model BIC = 814.6, single factor model BIC = 877.8).
+
+In addition to standard model selection, we compared the accuracy of the four-factor model
+on predicting held-out observations to the accuracy of a single-factor model. Using leave-one-out
+cross validation to control for overfitting, the four-factor model explained 63.9\% of variance in
+reading skill for the held-out points. The single factor model used only Factor 2, which is largely
+a composite of the CTOPP measures of phonological awareness, phonological memory, and nonverbal IQ. This model was only able to explain 27.4\% of variance in reading skill for held-out
+observations (Figure S6), indicating the necessity of considering multiple underlying dimensions
+(at least 4) in order to accurately predict individual differences in reading ability.
+
+\begin{figure}
+    \centering
+    \caption{Results of exploratory factor analysis}
+    \label{fig:p3_fig_5}
+    \includegraphics[width=18cm]{images/paper_3/5_factor_analysis.png}
+    \item \textit{Factor loadings for the orthogonal four-factor model are shown in the table; shading
+    corresponds to absolute value of the loading. The scatterplot shows the correspondence between
+    true (measured) and predicted reading skill using a linear model with all four factors as
+    predictors. Each point was predicted using leave-one-out cross-validation (LOO-CV). Color
+    indicates whether that point was more accurately predicted by the single-factor model or the full
+    model with all four factors. Green points had a lower squared error when predicted by the four-
+    factor model, and purple points had a lower squared error when predicted by the single-factor.
+    Gray points had similar prediction accuracy for both models.}
+\end{figure}
+
+\section{Discussion}
+Our results demonstrate that (1) a core phonological deficit model is insufficient to account
+for many cases of developmental dyslexia, (2) abnormal performance on the motion discrimination
+experiment in children with dyslexia cannot be ascribed to a uniform profile of either sensory or
+non-sensory deficits, (3) both sensory and non-sensory mechanisms explain variance in reading
+skill above and beyond phonological processing, (4) the correlational structure of cognitive,
+linguistic and sensory measures explored here is consistent with, at minimum, four underlying
+factors, (5) each of these four factors accounts for unique variance in children’s reading abilities.
+In sum, our results are not consistent with models of dyslexia that only consider phonological
+processing or models in which impairments in sensory encoding or decision making primarily
+affect reading development via a disruption of phonological processing. Instead, dyslexia should
+be reconceptualized as a disorder that may arise from several distinct loci. While our results do not
+rule out that a single impairment could explain dyslexia in any individual, such a model is not
+broadly applicable at the population level.
+
+\end{document}

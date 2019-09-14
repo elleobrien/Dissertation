@@ -1,0 +1,149 @@
+%  ========================================================================
+%  Copyright (c) 1985 The University of Washington
+%
+%  Licensed under the Apache License, Version 2.0 (the "License");
+%  you may not use this file except in compliance with the License.
+%  You may obtain a copy of the License at
+%
+%      http://www.apache.org/licenses/LICENSE-2.0
+%
+%  Unless required by applicable law or agreed to in writing, software
+%  distributed under the License is distributed on an "AS IS" BASIS,
+%  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+%  See the License for the specific language governing permissions and
+%  limitations under the License.
+%  ========================================================================
+%
+
+% Documentation for University of Washington thesis LaTeX document class
+% by Jim Fox
+% fox@washington.edu
+
+ 
+\documentclass [11pt, proquest] {uwthesis}[2016/11/22]
+\usepackage{tipa} % for IPA
+\usepackage{subfiles}
+\usepackage{graphicx, setspace}
+\usepackage{booktabs,caption,makecell}
+\usepackage[flushleft]{threeparttable}
+\usepackage{wasysym}
+\graphicspath{{images/}{../images/}}
+%
+% The following line would print the thesis in a postscript font % \usepackage{natbib}
+% \def\bibpreamble{\protect\addcontentsline{toc}{chapter}{Bibliography}}
+
+\setcounter{tocdepth}{1}  % Print the chapter and sections to the toc
+
+% \font\mffont=logosl10 scaled\magstep1
+\let\mffont=\sf
+% --- end-of-sample-stuff ---
+ 
+
+\begin{document}
+ 
+% ==========   Preliminary pages
+\prelimpages
+
+%
+% ----- copyright and title pages
+%
+\Title{Sensory Theories of Dyslexia}
+\Author{Gabrielle O'Brien}
+\Year{2019}
+\Program{Speech and Hearing Sciences}
+
+\Chair{Adrian K.C. Lee}{Assistant Professor}{Speech and Hearing Sciences}
+\Signature{Jason D. Yeatman}
+\Signature{Richard Wright}
+
+
+\copyrightpage
+
+\titlepage  
+
+
+%
+% ----- abstract
+%
+
+
+\setcounter{page}{-1}
+\abstract{%
+This sample dissertation is an aid to students who are attempting
+to format their theses with \LaTeX, a sophisticated
+text formatter widely used by mathematicians and scientists everywhere.
+ 
+\begin{itemize}
+\item It describes the use of a specialized
+macro package developed specifically for thesis production
+at the University.
+The macros customize \LaTeX\ for the correct thesis style,
+allowing the student to concentrate on the substance of
+his or her text.%
+\footnote{See Appendix A to obtain the source to this
+ thesis and the class file.}
+\item It demonstrates the solutions to a variety of
+formatting challenges found in thesis production.
+\item It serves as a template for a real dissertation.
+\end{itemize}
+}
+ 
+%
+% ----- contents & etc.
+%
+\tableofcontents
+\listoffigures
+\listoftables  
+ 
+%
+% ----- acknowledgments
+%
+\acknowledgments{The author wishes to thank Count Chocula, Frankenberry and Booberry.}
+
+%
+% ----- dedication
+%
+\dedication{\begin{center}for Bruno\end{center}}
+
+%
+% end of the preliminary pages
+ 
+
+%
+% ==========      Text pages
+%
+
+\textpages
+ 
+% ========== Chapter 1
+\subfile{sections/introduction}
+ 
+% ========== Chapter 2
+\subfile{sections/paper_1}
+
+% ========== Chapter 3
+\subfile{sections/paper_2}
+\raggedbottom
+% ========== Chapter 4
+\subfile{sections/paper_3}
+
+% ========== Chapter 5
+\subfile{sections/discussion}
+
+%
+% ==========   Bibliography
+%
+\nocite{*}  % include everything in the references.bib file
+\bibliographystyle{unsrt}
+\bibliography{references}
+%
+% ==========   Appendices
+%
+\appendix
+\raggedbottom\sloppy
+ 
+% ========== Appendix A
+ 
+\subfile{sections/appendix}
+
+\end{document}
