@@ -19,7 +19,6 @@
 % by Jim Fox
 % fox@washington.edu
 
- 
 \documentclass [11pt, proquest] {uwthesis}[2016/11/22]
 \usepackage{tipa} % for IPA
 \usepackage{subfiles}
@@ -27,7 +26,12 @@
 \usepackage{booktabs,caption,makecell}
 \usepackage[flushleft]{threeparttable}
 \usepackage{wasysym}
+\usepackage{amsmath}
+\usepackage [english]{babel}
+\usepackage [autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
 \graphicspath{{images/}{../images/}}
+\usepackage{natbib}
 %
 % The following line would print the thesis in a postscript font % \usepackage{natbib}
 % \def\bibpreamble{\protect\addcontentsline{toc}{chapter}{Bibliography}}
@@ -38,7 +42,7 @@
 \let\mffont=\sf
 % --- end-of-sample-stuff ---
  
-
+ 
 \begin{document}
  
 % ==========   Preliminary pages
@@ -47,7 +51,7 @@
 %
 % ----- copyright and title pages
 %
-\Title{Sensory Theories of Dyslexia}
+\Title{A Multifactorial Model of Risk for Dyslexia}
 \Author{Gabrielle O'Brien}
 \Year{2019}
 \Program{Speech and Hearing Sciences}
@@ -127,14 +131,16 @@ formatting challenges found in thesis production.
 % ========== Chapter 4
 \subfile{sections/paper_3}
 
+\subfile{sections/paper_4}
+
 % ========== Chapter 5
 \subfile{sections/discussion}
 
 %
 % ==========   Bibliography
 %
-\nocite{*}  % include everything in the references.bib file
-\bibliographystyle{unsrt}
+% include everything in the references.bib file
+\bibliographystyle{apalike}
 \bibliography{references}
 %
 % ==========   Appendices
@@ -144,6 +150,8 @@ formatting challenges found in thesis production.
  
 % ========== Appendix A
  
-\subfile{sections/appendix}
+\subfile{sections/appendixA}
+\subfile{sections/appendixB}
+
 
 \end{document}
